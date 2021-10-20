@@ -25,7 +25,7 @@ function filterProducts (category) {
   let filteredProducts = []
   for (i=0; i<products.length; i++) {
     for (j=0; j<products[i].tags.length ; j++) {
-      if (products[i].tags[j] == category ) {
+      if (products[i].tags[j] === category ) {
         filteredProducts.push(products[i])
       }
     }
